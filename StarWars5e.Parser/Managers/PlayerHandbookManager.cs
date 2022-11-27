@@ -512,7 +512,20 @@ namespace StarWars5e.Parser.Managers
                 Console.WriteLine("Failed to upload PHB armor properties.");
             }
 
+            try
+            {
+                var languages = await new PlayerHandbookLanguagesProcessor()
+                    .Process(_phbFilesNames.Where(p => p.Equals("PHB.phb_04.txt")).ToList(), _localization);
 
+                await _tableStorage.AddBatchAsync<CommonLanguage>($"languages{_localization.Language}", languages,
+                    new BatchOperationOptions { BatchInsertMethod = BatchInsertMethod.InsertOrReplace });
+            }
+            catch (StorageException)
+            {
+                Console.WriteLine("Failed to upload Common Languages.");
+            }
+
+            
             try
             {
                 var maneuvers =
