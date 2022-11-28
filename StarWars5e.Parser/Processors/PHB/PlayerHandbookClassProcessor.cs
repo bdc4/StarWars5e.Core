@@ -408,7 +408,7 @@ namespace StarWars5e.Parser.Processors.PHB
                         .Take(nextFeatureNameLineIndex - currentFeatureNameLineIndex).RemoveEmptyLines().ToList();
 
                 var name = featureLines[0].Split("# ")[1].Trim();
-                
+                //var metadata = ReadMetadata($"features.{Enum.GetName(featureSource)}.{sourceName.Replace(" ", "")}.{name.Replace(" ", "")}");
 
                 var levels = GetFeatureLevels(featureLines.Skip(1).CleanListOfStrings().ToList());
 
@@ -425,7 +425,7 @@ namespace StarWars5e.Parser.Processors.PHB
                         RowKey = $"{featureSource}-{sourceName}-{name}-{level}".Replace("/", string.Empty)
                             .Replace(@"\", string.Empty)
                     };
-
+                    feature.Metadata = FeatureMetadataProcessor.ProcessMetadata(feature);
                     features.Add(feature);
                 }
             }

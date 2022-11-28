@@ -1,12 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace StarWars5e.Models.Utils
 {
     public static class StringExtentions
     {
+        public static string MinifyJson(this string json)
+        {
+            var options =
+                new JsonWriterOptions
+                {
+                    Indented = false,
+                    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                };
+            using var document = JsonDocument.Parse(json);
+            using var stream = new MemoryStream();
+            using var writer = new Utf8JsonWriter(stream, options);
+            document.WriteTo(writer);
+            writer.Flush();
+            return Encoding.UTF8.GetString(stream.ToArray());
+        }
         public static bool HasLeadingHtmlWhitespace(this string input)
         {
             return input.Trim().StartsWith("&emsp;") || input.Trim().StartsWith("&nbsp;");
