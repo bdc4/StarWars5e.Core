@@ -57,6 +57,8 @@ namespace StarWars5e.Parser.Processors.PHB
                     PartitionKey = contentType.ToString(),
                     RowKey = name
                 };
+                
+                feat.Metadata = MetadataProcessor.ProcessMetadata(feat);
 
                 var prerequisiteIndex =
                     featLines.FindIndex(f =>

@@ -55,7 +55,7 @@ namespace StarWars5e.Parser.Processors
                     ContentTypeEnum = contentType
                 };
 
-                strategy.Metadata = FeatureMetadataProcessor.ProcessMetadata(strategy);
+                strategy.Metadata = MetadataProcessor.ProcessMetadata(strategy);
                 strategy.Text = string.Join(Environment.NewLine, strategyLines.Skip(1));
 
                 return strategy;

@@ -425,7 +425,7 @@ namespace StarWars5e.Parser.Processors.PHB
                         RowKey = $"{featureSource}-{sourceName}-{name}-{level}".Replace("/", string.Empty)
                             .Replace(@"\", string.Empty)
                     };
-                    feature.Metadata = FeatureMetadataProcessor.ProcessMetadata(feature);
+                    feature.Metadata = MetadataProcessor.ProcessMetadata(feature);
                     features.Add(feature);
                 }
             }

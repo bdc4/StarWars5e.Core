@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace StarWars5e.Parser.Processors
 {
-    internal static class FeatureMetadataProcessor
+    internal static class MetadataProcessor
     {
 
         public static string ProcessMetadata(Feature feature)
@@ -37,6 +37,25 @@ namespace StarWars5e.Parser.Processors
         {
             var manifestStreams = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             var key = $"StarWars5e.Parser.Sources.metadata.FightingStrategy.{fightingStrategy.Name.Replace(",", "").Replace(" ", "")}.json";
+            key = manifestStreams.FirstOrDefault(s => s.Equals(key, StringComparison.OrdinalIgnoreCase));
+            if (key == null) return String.Empty;
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(key))
+            {
+                if (stream == null)
+                {
+                    return String.Empty;
+                }
+                using (var reader = new StreamReader(stream, Encoding.UTF8, true, 128))
+                {
+                    return reader.ReadToEnd().MinifyJson();
+                }
+            }
+        }
+
+        public static string ProcessMetadata(Feat feat)
+        {
+            var manifestStreams = Assembly.GetExecutingAssembly().GetManifestResourceNames();
+            var key = $"StarWars5e.Parser.Sources.metadata.Feats.{feat.Name.Replace(",", "").Replace(" ", "")}.json";
             key = manifestStreams.FirstOrDefault(s => s.Equals(key, StringComparison.OrdinalIgnoreCase));
             if (key == null) return String.Empty;
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(key))

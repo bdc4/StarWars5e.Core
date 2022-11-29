@@ -5,9 +5,11 @@ namespace StarWars5e.Models
 {
     public class Feat : BaseEntity
     {
+        public Feat() { }
         public string Name { get; set; }
         public string Prerequisite { get; set; }
         public string Text { get; set; }
+        public string Metadata { get; set; }
         public List<string> AttributesIncreased { get; set; }
         public string AttributesIncreasedJson
         {

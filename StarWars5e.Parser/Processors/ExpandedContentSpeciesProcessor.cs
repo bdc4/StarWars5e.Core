@@ -123,7 +123,7 @@ namespace StarWars5e.Parser.Processors
                         SourceEnum = FeatureSource.Species,
                         PartitionKey = contentType.ToString()
                     };
-                    feature.Metadata = FeatureMetadataProcessor.ProcessMetadata(feature);
+                    feature.Metadata = MetadataProcessor.ProcessMetadata(feature);
                     species.Features.Add(feature);
                 }
 
