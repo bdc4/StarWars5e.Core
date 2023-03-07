@@ -19,11 +19,14 @@ namespace StarWars5e.Api.Managers
 
         public async Task<IEnumerable<GlobalSearchTerm>> RunGlobalSearch(string searchText, Language language)
         {
-            var search = await _searchClient.SearchAsync<GlobalSearchTerm>(searchText);
-
-            var results = search.Value.GetResults()
-                .Select(r => r.Document).Where(d => d.LanguageEnum == language);
-            return results;
+            try {
+                var search = await _searchClient.SearchAsync<GlobalSearchTerm>(searchText, new SearchOptions {Size=1000});
+                var results = search.Value.GetResults()
+                    .Select(r => r.Document).Where(d => d.LanguageEnum == language);
+                return results;
+            } catch(System.Exception e) {
+                return new List<GlobalSearchTerm>();
+            } 
         }
     }
 }
