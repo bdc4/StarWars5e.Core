@@ -2477,7 +2477,7 @@ You can use only one Subroutine modification on a power when you cast it, unless
 
 <div class='footnote'>EXPANDED CONTENT | ENHANCED ITEMS | ITEM MODIFICATIONS (WRISTPAD)</div>
 
-/pagebreak
+\pagebreak
 
 ## Cybertech Engineering (Depreciated)
 Those engineers who choose the Cybertech Engineering discipline focus on the ability to craft reusable consumables and items that augment and complement their techcasting abilities.
