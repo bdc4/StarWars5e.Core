@@ -49,6 +49,7 @@
         Rule,
         FightingMastery,
         FightingStyle,
+        FightingStrategy,
         LightsaberForm,
         ExpandedContent,
         ClassImprovement,
