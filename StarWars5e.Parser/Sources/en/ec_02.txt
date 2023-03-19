@@ -5667,7 +5667,7 @@ As a nikto, you have the following special traits.
 ***Languages.*** You can speak, read, and write Galactic Basic, Nikto, and Huttese. Nikto is spoken with sharp syllables with a deep and rumbling cadence.
 
 ***Adaptation.*** The frequent radiation bursts from the nearby dying star caused the nikto to mutate and adapt into different subspecies over time, specialized for different environments. Choose one of the following adaptations:
-___
+
 - **Esral'sa'Nikto (Mountain)**<br> ***Acute Hearing.*** Whenever you make a Wisdom (Perception) check related to hearing, you are considered to have expertise in the Perception skill.<br> ***Cold Adaptation.*** You have advantage on Constitution saving throws made to avoid exhaustion due to extreme cold.
 - **Gluss'sa'Nikto (Pale)**<br> ***Hold Breath.*** You can hold your breath for up to 15 minutes at a time.<br> ***Swim.*** You have a swimming speed of 30 feet.
 - **Kadas'sa'Nikto (Green)**<br> ***Claws.*** Your claws are natural weapons, which you can use to make unarmed strikes. Additionally, your unarmed strikes deal 1d4 kinetic damage.<br> ***Forest Dweller.*** You don't treat forest terrain as difficult terrain.<br> ***Treeclimber.*** You have a climbing speed of 30 feet.
