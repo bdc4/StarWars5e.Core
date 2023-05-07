@@ -491,6 +491,11 @@
     <EmbeddedResource Include="Sources\sp\WH\wh_aa.txt" />
     <EmbeddedResource Include="Sources\sp\WH\wh_changelog.txt" />
   </ItemGroup>
+	<Target Name="EmbedMetadata" BeforeTargets="BeforeBuild">
+		<CreateItem Include="Sources\metadata\**\*.json">
+			<Output ItemName="EmbeddedResource" TaskParameter="Include" />
+		</CreateItem>
+	</Target>
 
   <ItemGroup>
     <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.0.2" />

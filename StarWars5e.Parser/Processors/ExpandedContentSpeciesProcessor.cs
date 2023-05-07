@@ -113,6 +113,7 @@ namespace StarWars5e.Parser.Processors
 
                 foreach (var speciesTrait in species.Traits)
                 {
+                    //var metadata = ReadMetadata($"features.{Enum.GetName(FeatureSource.Species)}.{name.Replace(" ", "")}.{speciesTrait.Name.Replace(" ", "")}");
                     var feature = new Feature
                     {
                         Name = speciesTrait.Name,
@@ -122,6 +123,7 @@ namespace StarWars5e.Parser.Processors
                         SourceEnum = FeatureSource.Species,
                         PartitionKey = contentType.ToString()
                     };
+                    feature.Metadata = MetadataProcessor.ProcessMetadata(feature);
                     species.Features.Add(feature);
                 }
 

@@ -57,6 +57,7 @@
         SplashclassImprovement,
         WeaponFocus,
         WeaponSupremacy,
-        Maneuver
+        Maneuver,
+        FightingStrategy
     }
 }
