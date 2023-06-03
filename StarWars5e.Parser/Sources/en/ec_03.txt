@@ -42,7 +42,7 @@
 |&emsp;Biotech Engineering      |
 |&emsp;Construction Engineering |
 |&emsp;Cybertech Engineering    |
-|&emsp;Cybertech Engineering (Old)   |
+|&emsp;Cybertech Engineering (Legacy)   |
 |Fighter||
 |&emsp;Adept Specialist         |
 |&emsp;Demolitions Specialist   |
@@ -2399,15 +2399,15 @@ While using your wrist as a tech focus, you gain a +1 bonus to the tech save DC 
 
 \pagebreakNum
 
-## Cybertech Engineering (Old)
+## Cybertech Engineering (Legacy)
 Those engineers who choose the Cybertech Engineering discipline focus on the ability to craft reusable consumables and items that augment and complement their techcasting abilities.
 
 ### Bonus Proficiencies
-_**Cybertech Engineering (Old):** 3rd level_<br>
+_**Cybertech Engineering (Legacy):** 3rd level_<br>
 You gain proficiency in cybertech's implements. Additionally, when you engage in crafting with cybertech's implements, the rate at which you craft doubles.
 
 ### Cybertech Contraptions
-_**Cybertech Engineering (Old):** 3rd level_<br>
+_**Cybertech Engineering (Legacy):** 3rd level_<br>
 You learn modify gadgets and wristpads utilizing your cybertech knowledge. Over the course of a long rest, you can modify your wristpad. You must have a wristpad and cybertech's implements in order to perform this modification.
 
 Your wristpad requires attunement, can only be used by you, and counts as a tech focus for your tech powers while you are attuned to it. Your modified wristpad has 4 modification slots, and it gains more at higher levels, as shown in the Modification Slots column of the engineer table. For each modification installed in excess of your proficiency bonus, your tech point maximum is reduced by 1. Over the course of a long rest, you can install, replace, or remove a number of modifications up to your Intelligence modifier (minimum of one).
@@ -2415,17 +2415,17 @@ Your wristpad requires attunement, can only be used by you, and counts as a tech
 Some modification effects require saving throws. When you use such an effect from this class, the DC equals your tech save DC.
 
 ### Potent Techcasting
-_**Cybertech Engineering (Old):** 3rd level_<br>
+_**Cybertech Engineering (Legacy):** 3rd level_<br>
 When you miss with a tech attack roll, or a creature succeeds on a saving throw against a tech power you cast, you can expend one use of your Potent Aptitude to overwhelm them. Roll the die, and either add it to the attack roll or subtract it from their saving throw.
 
 ### Adaptable Applications
-_**Cybertech Engineering (Old):** 6th, 9th, 13th, and 17th level_<br>
+_**Cybertech Engineering (Legacy):** 6th, 9th, 13th, and 17th level_<br>
 When you cast a tech power of 1st level or higher, you can choose to deal additional damage or provide additional healing with that power. The additional damage or healing equals half your engineer level.
 
 You can use this feature three times. You gain an additional use at 9th, 13th, and 17th level. You regain all expended uses when you complete a long rest.
 
 ### Combat Contrivances
-_**Cybertech Engineering (Old):** 14th level_<br>
+_**Cybertech Engineering (Legacy):** 14th level_<br>
 When you use your action to a cast a 1st-level or higher tech power, you can use your bonus action to gain temporary hit points equal to the level of the tech power + your Intelligence modifier.
 
 \columnbreak
@@ -2433,7 +2433,7 @@ When you use your action to a cast a 1st-level or higher tech power, you can use
 <div style='margin-top:28px'></div>
 
 ### Perfected Purposing
-_**Cybertech Engineering (Old):** 18th level_<br>
+_**Cybertech Engineering (Legacy):** 18th level_<br>
 When you cast a tech power, you can choose to deal maximum damage or provide maximum healing with that power.
 
 Once you've used this feature, you must complete a short or long rest before you can use it again.
@@ -2444,7 +2444,7 @@ Once you've used this feature, you must complete a short or long rest before you
 
 \pagebreak
 
-### Cybertech Modifications
+### Cybertech Modifications (Legacy)
 If a modification has prerequisites, you must meet them to install it. You can install the modification at the same time that you meet its prerequisites.
 
 #### Advanced Biotic Amplifier
